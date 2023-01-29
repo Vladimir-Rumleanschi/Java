@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"Aufgabe2","l":"Application"},{"p":"Aufgabe2.Enums","l":"ConsoleInput"},{"p":"Aufgabe2.Enums","l":"EuroCalculator"},{"p":"Aufgabe2.Enums","l":"EuroCalculator.EuroDenomination"},{"p":"Aufgabe2.Enums","l":"Product"}]

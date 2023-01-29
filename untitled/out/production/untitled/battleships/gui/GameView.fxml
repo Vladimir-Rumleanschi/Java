@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="656.0" prefWidth="921.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="battleships.gui.GameVieww">
+   <children>
+      <TextArea fx:id="chatBox" editable="false" focusTraversable="false" layoutX="655.0" layoutY="287.0" prefHeight="269.0" prefWidth="223.0" />
+      <TextField fx:id="chatInput" layoutX="655.0" layoutY="556.0" prefHeight="25.0" prefWidth="223.0" promptText="Chat..." />
+      <Button fx:id="send" layoutX="655.0" layoutY="581.0" mnemonicParsing="false" onAction="#handleSend" prefHeight="25.0" prefWidth="223.0" text="Send" />
+   </children>
+</AnchorPane>

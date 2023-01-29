@@ -1,0 +1,35 @@
+ /*
+Zeile 16(Debug.data): Syntax Fehler, es sollte eine "," anstatt "+" sein.
+Fehlermeldung:
+**************
+java: method pow in class java.lang.Math cannot be applied to given types;
+  required: double,double
+  found: double
+  reason: actual and formal argument lists differ in length
+**************
+Der Compiler erkennt eine Fehler in der Difienierung der Funktion wo sind zwei dubles als Variablen gebraucht.
+...
+*/
+
+ /*
+Zeile 6 (Debug Data): Class muss als public definiert sein.
+Zeile 2(Debug main ): Class DebugData muss in DebugMain importiert sein.
+Fehlermeldung:
+**************
+java: cannot find symbol
+  symbol:   class DebugData
+  location: class aufgabe3.DebugMain
+**************
+Der Compiler kann nicht die Funktion(DebugData) von DebugData.java sehen weil der Class ist nicht in main importiert.
+...
+*/
+
+ /*
+Zeile 10 (Debug Data): Datatype ist nicht richtig defieniert (es muss double anstatt int sein).
+Fehlermeldung:
+**************
+java: incompatible types: possible lossy conversion from double to int
+**************
+Der Compiler braucht das richtige datatype um die Funktion aufzurufen.
+...
+*/

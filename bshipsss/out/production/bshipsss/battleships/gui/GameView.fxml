@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="656.0" prefWidth="921.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="battleships.gui.GameViewController">
+   <children>
+      <TextArea fx:id="chatBox" editable="false" focusTraversable="false" layoutX="655.0" layoutY="287.0" prefHeight="269.0" prefWidth="223.0" />
+      <TextField fx:id="chatInput" layoutX="655.0" layoutY="556.0" onKeyPressed="#enterPressed" prefHeight="25.0" prefWidth="223.0" promptText="Chat..." />
+      <Button fx:id="send" layoutX="655.0" layoutY="581.0" mnemonicParsing="false" onAction="#handleSend" prefHeight="25.0" prefWidth="223.0" text="Send" />
+    <Button fx:id="A1" layoutX="25.0" layoutY="25.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" textFill="#3c3a3a" AnchorPane.leftAnchor="44.0" AnchorPane.rightAnchor="852.0" />
+      <Button fx:id="A2" layoutX="70.0" layoutY="25.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="A3" layoutX="96.0" layoutY="25.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="A4" layoutX="122.0" layoutY="25.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="A5" layoutX="148.0" layoutY="25.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="A6" layoutX="174.0" layoutY="25.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="A7" layoutX="200.0" layoutY="25.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="A8" layoutX="226.0" layoutY="25.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="A9" layoutX="252.0" layoutY="25.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="A10" layoutX="278.0" layoutY="25.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="B1" layoutX="44.0" layoutY="50.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="B2" layoutX="70.0" layoutY="50.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="B3" layoutX="96.0" layoutY="50.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="B4" layoutX="122.0" layoutY="50.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="B5" layoutX="148.0" layoutY="50.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="B6" layoutX="174.0" layoutY="50.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="B7" layoutX="200.0" layoutY="50.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="B8" layoutX="226.0" layoutY="50.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="B9" layoutX="252.0" layoutY="50.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="B10" layoutX="278.0" layoutY="50.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="C1" layoutX="44.0" layoutY="75.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="C3" layoutX="96.0" layoutY="75.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="C2" layoutX="70.0" layoutY="75.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="C4" layoutX="122.0" layoutY="75.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="C5" layoutX="148.0" layoutY="75.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="C6" layoutX="174.0" layoutY="75.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="C7" layoutX="200.0" layoutY="75.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="C8" layoutX="226.0" layoutY="75.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="C9" layoutX="252.0" layoutY="75.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="C10" layoutX="278.0" layoutY="75.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="D4" layoutX="122.0" layoutY="100.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="D1" layoutX="44.0" layoutY="100.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="D2" layoutX="70.0" layoutY="100.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="D3" layoutX="96.0" layoutY="100.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="D5" layoutX="148.0" layoutY="100.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="D6" layoutX="174.0" layoutY="100.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="D7" layoutX="200.0" layoutY="100.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="D8" layoutX="226.0" layoutY="100.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="D9" layoutX="252.0" layoutY="100.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="D10" layoutX="278.0" layoutY="100.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="E1" layoutX="44.0" layoutY="125.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="F1" layoutX="44.0" layoutY="150.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="G1" layoutX="44.0" layoutY="175.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="H1" layoutX="44.0" layoutY="200.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="I1" layoutX="44.0" layoutY="225.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="E2" layoutX="70.0" layoutY="125.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="F2" layoutX="70.0" layoutY="150.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="G2" layoutX="70.0" layoutY="175.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="H2" layoutX="70.0" layoutY="200.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="I2" layoutX="70.0" layoutY="225.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="E3" layoutX="96.0" layoutY="125.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="F3" layoutX="96.0" layoutY="150.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="G3" layoutX="96.0" layoutY="175.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="H3" layoutX="96.0" layoutY="200.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="I3" layoutX="96.0" layoutY="225.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="E7" layoutX="200.0" layoutY="125.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="F7" layoutX="200.0" layoutY="150.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="G7" layoutX="200.0" layoutY="175.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="H7" layoutX="200.0" layoutY="200.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="I7" layoutX="200.0" layoutY="225.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="E4" layoutX="122.0" layoutY="125.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="F4" layoutX="122.0" layoutY="150.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="G4" layoutX="122.0" layoutY="175.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="H4" layoutX="122.0" layoutY="200.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="I4" layoutX="122.0" layoutY="225.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="E9" layoutX="252.0" layoutY="125.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="F9" layoutX="252.0" layoutY="150.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="G9" layoutX="252.0" layoutY="175.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="H9" layoutX="252.0" layoutY="200.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="I9" layoutX="252.0" layoutY="225.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="E5" layoutX="148.0" layoutY="125.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="F5" layoutX="148.0" layoutY="150.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="G5" layoutX="148.0" layoutY="175.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="H5" layoutX="148.0" layoutY="200.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="I5" layoutX="148.0" layoutY="225.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="E8" layoutX="226.0" layoutY="125.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="F8" layoutX="226.0" layoutY="150.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="G8" layoutX="226.0" layoutY="175.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="H8" layoutX="226.0" layoutY="200.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="I8" layoutX="226.0" layoutY="225.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="E6" layoutX="174.0" layoutY="125.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="F6" layoutX="174.0" layoutY="150.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="G6" layoutX="174.0" layoutY="175.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="H6" layoutX="174.0" layoutY="200.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="I6" layoutX="174.0" layoutY="225.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="E10" layoutX="278.0" layoutY="125.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="F10" layoutX="278.0" layoutY="150.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="G10" layoutX="278.0" layoutY="175.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="H10" layoutX="278.0" layoutY="200.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="I10" layoutX="278.0" layoutY="225.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="J1" layoutX="44.0" layoutY="250.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="J2" layoutX="70.0" layoutY="250.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="J3" layoutX="96.0" layoutY="250.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="J7" layoutX="200.0" layoutY="250.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="J4" layoutX="122.0" layoutY="250.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="J9" layoutX="252.0" layoutY="250.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="J5" layoutX="148.0" layoutY="250.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="J8" layoutX="226.0" layoutY="250.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="J6" layoutX="174.0" layoutY="250.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="J10" layoutX="278.0" layoutY="250.0" mnemonicParsing="false" onAction="#hitEnemyField" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="A11" disable="true" focusTraversable="false" layoutX="45.0" layoutY="356.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" textFill="#3c3a3a" />
+      <Button fx:id="A21" disable="true" focusTraversable="false" layoutX="71.0" layoutY="356.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="A31" disable="true" focusTraversable="false" layoutX="97.0" layoutY="356.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="A41" disable="true" focusTraversable="false" layoutX="123.0" layoutY="356.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="A51" disable="true" focusTraversable="false" layoutX="149.0" layoutY="356.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="A61" disable="true" focusTraversable="false" layoutX="175.0" layoutY="356.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="A71" disable="true" focusTraversable="false" layoutX="201.0" layoutY="356.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="A81" disable="true" focusTraversable="false" layoutX="227.0" layoutY="356.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="A91" disable="true" focusTraversable="false" layoutX="253.0" layoutY="356.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="A101" disable="true" focusTraversable="false" layoutX="279.0" layoutY="356.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="B11" disable="true" focusTraversable="false" layoutX="45.0" layoutY="381.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="B21" disable="true" focusTraversable="false" layoutX="71.0" layoutY="381.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="B31" disable="true" focusTraversable="false" layoutX="97.0" layoutY="381.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="B41" disable="true" focusTraversable="false" layoutX="123.0" layoutY="381.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="B51" disable="true" focusTraversable="false" layoutX="149.0" layoutY="381.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="B61" disable="true" focusTraversable="false" layoutX="175.0" layoutY="381.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="B71" disable="true" focusTraversable="false" layoutX="201.0" layoutY="381.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="B81" disable="true" focusTraversable="false" layoutX="227.0" layoutY="381.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="B91" disable="true" focusTraversable="false" layoutX="253.0" layoutY="381.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="B101" disable="true" focusTraversable="false" layoutX="279.0" layoutY="381.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="C11" disable="true" focusTraversable="false" layoutX="45.0" layoutY="406.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="C31" disable="true" focusTraversable="false" layoutX="97.0" layoutY="406.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="C21" disable="true" focusTraversable="false" layoutX="71.0" layoutY="406.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="C41" disable="true" focusTraversable="false" layoutX="123.0" layoutY="406.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="C51" disable="true" focusTraversable="false" layoutX="149.0" layoutY="406.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="C61" disable="true" focusTraversable="false" layoutX="175.0" layoutY="406.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="C71" disable="true" focusTraversable="false" layoutX="201.0" layoutY="406.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="C81" disable="true" focusTraversable="false" layoutX="227.0" layoutY="406.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="C91" disable="true" focusTraversable="false" layoutX="253.0" layoutY="406.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="C101" disable="true" focusTraversable="false" layoutX="279.0" layoutY="406.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="D41" disable="true" focusTraversable="false" layoutX="123.0" layoutY="431.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="D11" disable="true" focusTraversable="false" layoutX="45.0" layoutY="431.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="D21" disable="true" focusTraversable="false" layoutX="71.0" layoutY="431.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="D31" disable="true" focusTraversable="false" layoutX="97.0" layoutY="431.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="D51" disable="true" focusTraversable="false" layoutX="149.0" layoutY="431.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="D61" disable="true" focusTraversable="false" layoutX="175.0" layoutY="431.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="D71" disable="true" focusTraversable="false" layoutX="201.0" layoutY="431.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="D81" disable="true" focusTraversable="false" layoutX="227.0" layoutY="431.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="D91" disable="true" focusTraversable="false" layoutX="253.0" layoutY="431.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="D101" disable="true" focusTraversable="false" layoutX="279.0" layoutY="431.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="E11" disable="true" focusTraversable="false" layoutX="45.0" layoutY="456.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="F11" disable="true" focusTraversable="false" layoutX="45.0" layoutY="481.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="G11" disable="true" focusTraversable="false" layoutX="45.0" layoutY="506.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="H11" disable="true" focusTraversable="false" layoutX="45.0" layoutY="531.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="I11" disable="true" focusTraversable="false" layoutX="45.0" layoutY="556.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="E21" disable="true" focusTraversable="false" layoutX="71.0" layoutY="456.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="F21" disable="true" focusTraversable="false" layoutX="71.0" layoutY="481.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="G21" disable="true" focusTraversable="false" layoutX="71.0" layoutY="506.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="H21" disable="true" focusTraversable="false" layoutX="71.0" layoutY="531.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="I21" disable="true" focusTraversable="false" layoutX="71.0" layoutY="556.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="E31" disable="true" focusTraversable="false" layoutX="97.0" layoutY="456.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="F31" disable="true" focusTraversable="false" layoutX="97.0" layoutY="481.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="G31" disable="true" focusTraversable="false" layoutX="97.0" layoutY="506.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="H31" disable="true" focusTraversable="false" layoutX="97.0" layoutY="531.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="I31" disable="true" focusTraversable="false" layoutX="97.0" layoutY="556.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="E71" disable="true" focusTraversable="false" layoutX="201.0" layoutY="456.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="F71" disable="true" focusTraversable="false" layoutX="201.0" layoutY="481.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="G71" disable="true" focusTraversable="false" layoutX="201.0" layoutY="506.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="H71" disable="true" focusTraversable="false" layoutX="201.0" layoutY="531.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="I71" disable="true" focusTraversable="false" layoutX="201.0" layoutY="556.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="E41" disable="true" focusTraversable="false" layoutX="123.0" layoutY="456.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="F41" disable="true" focusTraversable="false" layoutX="123.0" layoutY="481.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="G41" disable="true" focusTraversable="false" layoutX="123.0" layoutY="506.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="H41" disable="true" focusTraversable="false" layoutX="123.0" layoutY="531.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="I41" disable="true" focusTraversable="false" layoutX="123.0" layoutY="556.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="E91" disable="true" focusTraversable="false" layoutX="253.0" layoutY="456.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="F91" disable="true" focusTraversable="false" layoutX="253.0" layoutY="481.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="G91" disable="true" focusTraversable="false" layoutX="253.0" layoutY="506.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="H91" disable="true" focusTraversable="false" layoutX="253.0" layoutY="531.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="I91" disable="true" focusTraversable="false" layoutX="253.0" layoutY="556.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="E51" disable="true" focusTraversable="false" layoutX="149.0" layoutY="456.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="F51" disable="true" focusTraversable="false" layoutX="149.0" layoutY="481.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="G51" disable="true" focusTraversable="false" layoutX="149.0" layoutY="506.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="H51" disable="true" focusTraversable="false" layoutX="149.0" layoutY="531.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="I51" disable="true" focusTraversable="false" layoutX="149.0" layoutY="556.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="E81" disable="true" focusTraversable="false" layoutX="227.0" layoutY="456.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="F81" disable="true" focusTraversable="false" layoutX="227.0" layoutY="481.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="G81" disable="true" focusTraversable="false" layoutX="227.0" layoutY="506.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="H81" disable="true" focusTraversable="false" layoutX="227.0" layoutY="531.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="I81" disable="true" focusTraversable="false" layoutX="227.0" layoutY="556.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="E61" disable="true" focusTraversable="false" layoutX="175.0" layoutY="456.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="F61" disable="true" focusTraversable="false" layoutX="175.0" layoutY="481.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="G61" disable="true" focusTraversable="false" layoutX="175.0" layoutY="506.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="H61" disable="true" focusTraversable="false" layoutX="175.0" layoutY="531.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="I61" disable="true" focusTraversable="false" layoutX="175.0" layoutY="556.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="E101" disable="true" focusTraversable="false" layoutX="279.0" layoutY="456.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="F101" disable="true" focusTraversable="false" layoutX="279.0" layoutY="481.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="G101" disable="true" focusTraversable="false" layoutX="279.0" layoutY="506.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="H101" disable="true" focusTraversable="false" layoutX="279.0" layoutY="531.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="I101" disable="true" focusTraversable="false" layoutX="279.0" layoutY="556.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="J11" disable="true" focusTraversable="false" layoutX="45.0" layoutY="581.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="J21" disable="true" focusTraversable="false" layoutX="71.0" layoutY="581.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="J31" disable="true" focusTraversable="false" layoutX="97.0" layoutY="581.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="J71" disable="true" focusTraversable="false" layoutX="201.0" layoutY="581.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="J41" disable="true" focusTraversable="false" layoutX="123.0" layoutY="581.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="J91" disable="true" focusTraversable="false" layoutX="253.0" layoutY="581.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="J51" disable="true" focusTraversable="false" layoutX="149.0" layoutY="581.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="J81" disable="true" focusTraversable="false" layoutX="227.0" layoutY="581.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="J61" disable="true" focusTraversable="false" layoutX="175.0" layoutY="581.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="J101" disable="true" focusTraversable="false" layoutX="279.0" layoutY="581.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+      <Text fx:id="turn" fill="#ee0e0e" layoutX="47.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wait for the opponent..." textAlignment="CENTER" wrappingWidth="256.13671875">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Button fx:id="quit" layoutX="394.0" layoutY="360.0" mnemonicParsing="false" onAction="#handleQuit" prefHeight="43.0" prefWidth="95.0" text="Quit" visible="false" />
+      <Text layoutX="225.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Congratulations!" visible="false">
+         <font>
+            <Font size="67.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Text>
+      <TextField fx:id="win" alignment="CENTER" editable="false" focusTraversable="false" layoutX="182.0" layoutY="260.0" style="-fx-background-color: grey;" text="Congratulations!" visible="false">
+         <font>
+            <Font name="System Italic" size="42.0" />
+         </font>
+         <effect>
+            <Glow level="0.69" />
+         </effect>
+      </TextField>
+   </children>
+</AnchorPane>
